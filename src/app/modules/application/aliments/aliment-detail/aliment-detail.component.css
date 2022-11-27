@@ -1,0 +1,60 @@
+.body {
+    border-radius: 0.2em;
+    border: 0.1em solid;
+    border-color: #c5c5c5;
+    box-shadow: 0.1em 2px 2px #c5c5c5;
+    font-weight: bold;
+    height: auto;
+}
+
+.title {
+    text-align: center;
+    margin: 2em;
+}
+
+.img {
+    width: 25%;
+    margin-left: 2em;
+}
+
+.img img {
+    border-radius: 10px;
+}
+
+.formulaire {
+    margin-left: 2em;
+}
+
+.formulaire h4 {
+    text-align: center;
+}
+
+.formulaire div {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 2em;
+}
+
+.formulaire div label {
+    min-width: 6em;
+}
+
+button {
+    background-color: #454545;
+    border-color: #454545;
+}
+
+button:hover {
+    background-color: #202020;
+    border-color: #202020;
+}
+
+.action {
+    margin-bottom: 1em;
+
+}
+
+.action :first-child {
+    margin-right: 1em;
+
+}

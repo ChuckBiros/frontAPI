@@ -1,0 +1,20 @@
+.component{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2em 0.2em;
+  border-radius: 0.2em;
+}
+
+.available{
+background-color: green;
+}
+
+.not-available{
+background-color: red;
+}
+
+.tag{
+  font-size: 10px;
+  color: white;
+}

@@ -1,0 +1,47 @@
+<div class="container py-5">
+    <div class="body">
+        <div class="title">
+            Modification d'un aliment
+        </div>
+        <div class="img">
+            <img class="img-fluid card-img-top" [src]="state.image" alt="Card image cap" />
+        </div>
+        <div class="formulaire">
+            <form formGroupName="formGroup">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" [value]="state.nom" (change)="valueNamechange($event)">
+                </div>
+                <div>
+                    <label for="type">Type :</label>
+                    <select name="type" id="type" [value]="state.type" (change)="valueTypechange($event)">
+                        <option value="">--Choississez un type--</option>
+                        <option value="Fruit">Fruit</option>
+                        <option value="Fromage">Fromage</option>
+                        <option value="Crème">Crème</option>
+                        <option value="Légume">Légume</option>
+                        <option value="Viande">Viande</option>
+                        <option value="Sauce">Sauce</option>
+                        <option value="Tubercule">Tubercule</option>
+                        <option value="Pâte">Pâte</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Quantité :</label>
+                    <input type="number" id="quantity" name="user_quantity" [value]="state.quantite"
+                        (change)="valueQuantitychange($event)">
+                </div>
+                <div class="action">
+                    <button type="button" class="btn btn-primary" (click)="submit()">
+                        Enregistrer
+                    </button>
+                    <button type="button" class="btn btn-primary" (click)="cancel()">
+                        Annuler
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
